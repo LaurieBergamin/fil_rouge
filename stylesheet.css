@@ -1,17 +1,33 @@
 body {
     background-color: #CDE4DF;
 }
+
 header {
-    background-image: url(./feuilles2.jpg);
+
     size-adjust:initial ;
+background-image: url(./fond4.avif);
 }
+
 
 h1 {
     color: rgb(82, 83, 83);
     font-size: 100px;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
-    
-    justify-self: center; 
+}
+h3 {
+    color: rgb(65, 77, 75);
+    text-align: center;
+}
+#dropdown-menu {
+    background-color:#FAF3DD ;
+
+}
+.nav-item{
+    font:black;
+
+}
+.dropdown-menu{
+    justify-items:center;
 }
 
 button:hover {/*changement de couleur passage souris*/
