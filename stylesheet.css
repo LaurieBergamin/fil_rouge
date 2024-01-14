@@ -1,0 +1,67 @@
+body {
+    background-color: #CDE4DF;
+}
+header {
+    background-image: url(./feuilles2.jpg);
+    size-adjust:initial ;
+}
+
+h1 {
+    color: rgb(82, 83, 83);
+    font-size: 100px;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+    
+    justify-self: center; 
+}
+
+button:hover {/*changement de couleur passage souris*/
+    color: #bfbdbd;
+}
+
+
+.container {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction:row;
+    }
+
+.photo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+legend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large ;
+    text-align: center;
+}
+fieldset {
+    background-image: url(./feuilles2.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-bottom: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-style: hidden;
+}
+button {
+    margin: auto;
+    border-style: hidden;
+    font-size: large;
+    background-color: #F3E0B6;
+}
+ul2 { /*footer*/
+    grid-column: 2;
+    grid-row: 4;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+}
+#retour {
+    background-color: #F3E0B6;
+    border-style: hidden;
+    text-align: center;
+    margin-top: auto;
+}
