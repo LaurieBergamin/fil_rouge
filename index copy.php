@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="stylesheet.css">
     
 </head>
-
 <body id="body">
     <header>
     <div class ="container"></div>
@@ -22,22 +21,23 @@
         <h1 justify-text-center>Backyard</h1>
         <h3>Une autre idée du vêtement</h3> 
         </div>
-        <div class= "col">
-        <div id="sideBar" class="sideBar" justify-self-end>
+        <div class= "container">
+            <div id="sideBar" class="sideBar">
                 <a id="closeBtn" href="#" class="close">×</a>
                 <ul>
-                <li><a href="#">Inscription</a></li>
                 <li><a href="#">Connexion</a></li>
+                <li><a href="#">Inscription</a></li>
                 </ul>
             </div>
-                <ul class="nav justify-self-end">
-                <li class="nav-item">
-                <a class="nav-link" href="#">Panier</a>
-            </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#" id="openBtn">Mon compte</a>
-            </li>
-            </ul>     
+            <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </a>
+        </div>
+        
     </div>
     </header>
     
@@ -86,35 +86,17 @@
                 <li><a class="dropdown-item" href="#">Jupes/Robes</a></li>
             </ul>
 </div>
-<div class="container">
-    <form action="./adduser.php" method="post" enctype="multipart/form-data" >
-            <legend><h2>Formulaire d'inscription</h2></legend> 
-            <label for="nom">Nom:</label>
-            <input type="text" name="nom_utilisateur"><br>
-            <label for="prenom">Prénom :</label>
-            <input type="prenom" name="prenom_utilisateur"><br>
-            <label for="mail">Email:</label>
-            <input type="text" name="email_utilisateur"><br>
-            <label for="password">Mot de passe:</label>
-            <input type="password" name="password_utilisateur"><br>
-            <label for="confirm_password">Confirmez votre mot de passe:</label>
-            <input type="password" name="confirm_password"><br>
-    <button class="btn btn-warning opacity-75" name="submit">Valider</button>
-    <button class="btn btn-info opacity-75">Retour</button>
-</form>
-</div>
-<div>
-<footer>
-    <div class="container-fluid justify-content-evenly">
+<img src="dressing.jpg" class="img-fluid" alt="photo vêtements" justify-self-end/>
+    
+<div class="container-fluid">
+    <footer>
         <ul2>
             <li>Instagram</li>
             <li>Facebook</li>
             <li>Mentions Légales</li>
             <li>CGV</li>
         </ul2>
-        </div>
-</footer>  
-</div>
-
+    </footer>  
+    </div>
 </body>
 </html>

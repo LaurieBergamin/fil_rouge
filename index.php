@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="stylesheet.css">
     
 </head>
-
 <body id="body">
     <header>
     <div class ="container"></div>
@@ -23,7 +22,7 @@
         <h3>Une autre idée du vêtement</h3> 
         </div>
         <div class= "col">
-        <div id="sideBar" class="sideBar" justify-self-end>
+            <div id="sideBar" class="sideBar" justify-self-end>
                 <a id="closeBtn" href="#" class="close">×</a>
                 <ul>
                 <li><a href="#">Inscription</a></li>
@@ -38,7 +37,7 @@
                 <a class="nav-link" href="#" id="openBtn">Mon compte</a>
             </li>
             </ul>     
-    </div>
+        </div>
     </header>
     
     <div class="container justify-content-evenly" >
@@ -86,35 +85,17 @@
                 <li><a class="dropdown-item" href="#">Jupes/Robes</a></li>
             </ul>
 </div>
-<div class="container">
-    <form action="./adduser.php" method="post" enctype="multipart/form-data" >
-            <legend><h2>Formulaire d'inscription</h2></legend> 
-            <label for="nom">Nom:</label>
-            <input type="text" name="nom_utilisateur"><br>
-            <label for="prenom">Prénom :</label>
-            <input type="prenom" name="prenom_utilisateur"><br>
-            <label for="mail">Email:</label>
-            <input type="text" name="email_utilisateur"><br>
-            <label for="password">Mot de passe:</label>
-            <input type="password" name="password_utilisateur"><br>
-            <label for="confirm_password">Confirmez votre mot de passe:</label>
-            <input type="password" name="confirm_password"><br>
-    <button class="btn btn-warning opacity-75" name="submit">Valider</button>
-    <button class="btn btn-info opacity-75">Retour</button>
-</form>
-</div>
-<div>
-<footer>
-    <div class="container-fluid justify-content-evenly">
+<img src="dressing.jpg" class="img-fluid" alt="photo vêtements" justify-self-end/>
+    
+<div class="container-fluid">
+    <footer>
         <ul2>
             <li>Instagram</li>
             <li>Facebook</li>
             <li>Mentions Légales</li>
             <li>CGV</li>
         </ul2>
-        </div>
-</footer>  
-</div>
-
+    </footer>  
+    </div>
 </body>
 </html>

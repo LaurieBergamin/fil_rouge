@@ -1,14 +1,57 @@
-body {
+body{
     background-color: #CDE4DF;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 0.5;
+    animation-fill-mode: forwards;
 }
-
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 header {
-
     size-adjust:initial ;
-background-image: url(./fond4.avif);
+background-image: url(./fond4.jpg);
 }
-
-
+.sideBar {
+    height: 50%;
+    width: 200px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: -250px;
+    background-color: #FAF3DD;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+.sideBar a {
+    padding: 5px 5px 8px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #828383;
+    display: block;
+    transition: 0.3s;
+}
+.sideBar a:hover {/*changement de couleur*/
+    color: #111;
+}
+.sideBar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sideBar.active {
+    right: 0;
+}
+.sideBar.close {
+    position:absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+}
 h1 {
     color: rgb(82, 83, 83);
     font-size: 100px;
@@ -18,66 +61,22 @@ h3 {
     color: rgb(65, 77, 75);
     text-align: center;
 }
-#dropdown-menu {
-    background-color:#FAF3DD ;
-
-}
-.nav-item{
-    font:black;
-
-}
-.dropdown-menu{
-    justify-items:center;
-}
-
-button:hover {/*changement de couleur passage souris*/
-    color: #bfbdbd;
-}
-
-
 .container {
     margin-bottom: auto;
     display: flex;
     flex-direction:row;
     }
+ul {
+    list-style: none;
 
-.photo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
 }
-legend {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:x-large ;
-    text-align: center;
-}
-fieldset {
-    background-image: url(./feuilles2.jpg);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    margin-bottom: 10%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    border-style: hidden;
-}
-button {
-    margin: auto;
-    border-style: hidden;
-    font-size: large;
-    background-color: #F3E0B6;
-}
-ul2 { /*footer*/
-    grid-column: 2;
-    grid-row: 4;
-    flex-direction: row;
-    justify-content: space-between;
+ul2{
+    justify-content: space-evenly;
     display: flex;
     list-style-type: none;
+    flex-direction: row;
+    margin-top: 10%;
 }
-#retour {
-    background-color: #F3E0B6;
-    border-style: hidden;
-    text-align: center;
-    margin-top: auto;
-}
+
+
+
